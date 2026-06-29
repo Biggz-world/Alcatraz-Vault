@@ -1,0 +1,226 @@
+{
+  "main": {
+    "id": "f2689bf6738b3178",
+    "type": "split",
+    "children": [
+      {
+        "id": "da84ffade6883d22",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a22b646a9081530e",
+            "type": "leaf",
+            "state": {
+              "type": "agentage-memory-3d-graph",
+              "state": {},
+              "icon": "brain",
+              "title": "3D Graph"
+            }
+          }
+        ],
+        "stacked": true
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "6dc3dab1b5a137fc",
+    "type": "split",
+    "children": [
+      {
+        "id": "de05e28948b32cda",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a187771706eaf18c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "816d5aca2df9824a",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "80a660eb54fc0f7d",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "e603fa28410d7557",
+    "type": "split",
+    "children": [
+      {
+        "id": "13c7cc5a28548950",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6e9400621d51f561",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "2026-06-21.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 2026-06-21"
+            }
+          },
+          {
+            "id": "86257c411b9762f1",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "2026-06-21.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 2026-06-21"
+            }
+          },
+          {
+            "id": "653d3ff7e70eada6",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "4b0f8bd5ae6c2134",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "36a2368aa4532679",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Welcome.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Welcome"
+            }
+          },
+          {
+            "id": "7c124e6443891964",
+            "type": "leaf",
+            "state": {
+              "type": "agent-chat-view",
+              "state": {},
+              "icon": "brain-cog",
+              "title": "Chat with agent"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "agentage-galaxy:Open 3D graph": false,
+      "obsidian-git:Open Git source control": false,
+      "remotely-save:Remotely Save": false,
+      "obsidian-importer:Open Importer": false,
+      "realclaudian:Open Claudian": false,
+      "pdf-plus:PDF++: Toggle auto-copy": false,
+      "pdf-plus:PDF++: Toggle auto-focus": false,
+      "pdf-plus:PDF++: Toggle auto-paste": false,
+      "obsidian-local-images-plus:Local Images Plus  0.16.4\r\nLocalize attachments (plugin folder)": false,
+      "omnisearch:Omnisearch": false,
+      "obsidian-livesync:P2P Status": false,
+      "obsidian-livesync:Replicate": false,
+      "obsidian-livesync:Show Log": false,
+      "workspaces:Manage workspace layouts": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "audio-recorder:Start/stop recording": false,
+      "obsidian-kanban:Create new board": false,
+      "ai-agent:Chat with Agent": false,
+      "obsidian-livesync:Show Customization sync": false
+    }
+  },
+  "active": "a22b646a9081530e",
+  "lastOpenFiles": [
+    "2026-06-21.md",
+    "flag_rebuild.md",
+    "Chats/chat-2026-06-29T03-15-52-141Z.md",
+    "Chats",
+    "create a link.md",
+    "Welcome.md",
+    "Untitled 2",
+    "Untitled 1",
+    "Untitled",
+    "desktop.ini"
+  ]
+}
