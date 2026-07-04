@@ -1,0 +1,20 @@
+{
+  "provider": "google",
+  "model": "gemini-2.5-flash",
+  "modelSupportsImages": true,
+  "googleApiKey": "",
+  "anthropicApiKey": "",
+  "openaiApiKey": "",
+  "ollamaBaseUrl": "http://localhost:11434",
+  "baseUrl": "",
+  "temperature": "Default",
+  "thinkingLevel": "Default",
+  "maxOutputTokens": "Default",
+  "rules": "",
+  "chatsFolder": "Chats",
+  "maxHistoryTurns": 2,
+  "generateChatName": true,
+  "readImages": true,
+  "reviewChanges": true,
+  "debug": true
+}

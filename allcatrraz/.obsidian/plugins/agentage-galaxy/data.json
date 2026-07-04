@@ -1,0 +1,21 @@
+{
+  "filters": {
+    "showTags": true,
+    "showAttachments": false,
+    "hideUnresolved": false,
+    "showOrphans": true,
+    "search": ""
+  },
+  "forces": {
+    "centerStrength": 0.1,
+    "repelStrength": 10,
+    "linkStrength": 0.5,
+    "linkDistance": 30
+  },
+  "nodeSize": 1.8,
+  "linkThickness": 0.6,
+  "showArrows": false,
+  "showLabels": true,
+  "autoRotate": true,
+  "rotateSpeed": 1.2
+}
