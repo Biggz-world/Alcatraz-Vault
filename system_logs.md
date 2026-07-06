@@ -151,3 +151,31 @@ Hermes (ACP) — ID `55f3ed1c` — enabled and ready
 **Setting:** `model.context_length = 10000`
 **Reason:** User requested tighter context management (~8-10K range) for faster terminal sessions.
 **Effect:** Compression triggers earlier, keeping responses snappy. Takes effect after `/reset` or new session.
+
+---
+
+## Fable 5 Traces — Implementation (2026-07-05)
+
+### What It Is
+A 4,665-trace corpus of `claude-fable-5` coding-agent sessions from **Glint Research / TeichAI**, converted to Hugging Face Agent Traces format. Each trace captures the full reasoning → action → verification loop.
+
+### Files
+| File | Size | Location |
+|------|------|----------|
+| Raw traces | 67 MB | `~/Downloads/fable5_cot_merged.jsonl` |
+| Analysis doc | 2.9 KB | `~/Desktop/Alcatraz/allcatrraz/autogpt-input/fable5_analysis.md` |
+| Fine-tuned GGUF | ~5 GB | LM Studio: `huihui-gemma-4-12b-coder-fable5-composer2.5-v1-abliterated` |
+
+### Skill Created
+- **`fable5-reasoning`** — behavioral patterns extracted from the corpus:
+  - Plan-then-execute (86% of actions)
+  - Deep CoT (median 2,562 chars)
+  - Tool orchestration: Bash 46%, Edit 30%, Read 13%
+  - Post-action verification (78%)
+  - Context-aware iteration (82%)
+
+### AionUi Integration
+The fine-tuned Fable5 model is registered in AionUi's LM Studio provider — available at `huihui-gemma-4-12b-coder-fable5-composer2.5-v1-abliterated`.
+
+### Loading the Skill
+In Hermes, load with: `/skill fable5-reasoning` or `hermes -s fable5-reasoning`
