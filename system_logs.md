@@ -107,3 +107,47 @@ After fixing the 3 cron jobs, memory was getting full (2,144/2,200 chars). Conso
 |-----------|----------|---------|
 | `pc-health-pipeline` | pc-maintenance | PC Health pipeline operation, cron pitfalls (input() hang, admin check, PermissionError on WinTemp) |
 | `airport-backup` | pc-maintenance | AirPort backup operation, cron pitfalls (WinError 64, stale SMB mounts, net use auto-mount) |
+
+---
+
+## AionUi Configuration (2026-07-05)
+
+### Provider: LM Studio (Local)
+**Endpoint:** `http://127.0.0.1:1234/v1`
+**9 models registered** (matching what LM Studio currently serves):
+
+| Model ID | Display Name | Context |
+|----------|-------------|---------|
+| `hermes` | Hermes 4 14B (Q5_K_S) | 32,768 |
+| `mistral` | OpenHermes 2.5 Mistral 7B (Q2_K) | 8,192 |
+| `gemma 12b~uncensored` | Gemma 4 12B Uncensored (Q4_0) | 8,192 |
+| `google/gemma-4-12b-qat` | Gemma 4 12B QAT (Q4_0) | 8,192 |
+| `google/gemma-4-e4b` | Gemma 4 E4B (Q4_K_M) | 8,192 |
+| `glm-v5-mag` | GLM V5 Mag (Q3_K_S) | 32,768 |
+| `glm-4.7-flash-claude-opus-4.5-high-reasoning-distill` | GLM 4.7 Flash Claude Opus Distill (Q3_K_S) | 32,768 |
+| `huihui-gemma-4-12b-coder-fable5-composer2.5-v1-abliterated` | Gemma 4 12B Fable5 Coder (Q4_K_S) | 8,192 |
+| `qwen3.5-9b-glm5.1-distill-v1-i1` | Qwen 3.5 9B GLM5.1 Distill (Q4_K_S) | 32,768 |
+
+### Speech (STT)
+- **Provider:** OpenAI Whisper (`whisper-1`)
+- **Endpoint:** `https://api.openai.com/v1`
+- **Status:** Enabled + auto-send on
+- **TTS:** Handled by Hermes agent backend (Edge TTS)
+
+### Default Model
+`hermes` via `lmstudio-local` provider
+
+### Agent Backend
+Hermes (ACP) — ID `55f3ed1c` — enabled and ready
+
+### Launch
+- **Command line:** `cd ~/AionUi && bun run dev`
+- **Desktop shortcut:** `C:\Users\o0DoU\Desktop\AionUi.lnk` (double-click to launch)
+
+---
+
+## Config Change: Context Length (2026-07-05)
+
+**Setting:** `model.context_length = 10000`
+**Reason:** User requested tighter context management (~8-10K range) for faster terminal sessions.
+**Effect:** Compression triggers earlier, keeping responses snappy. Takes effect after `/reset` or new session.
