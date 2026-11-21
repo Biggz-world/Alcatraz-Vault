@@ -102,7 +102,7 @@
         "@types/pouchdb-replication": "^6.4.7",
         "@types/transform-pouch": "^1.0.6",
         "@typescript-eslint/parser": "8.56.1",
-        "@vitest/browser": "^4.1.8",
+        "@vitest/browser": "^4.1.10",
         "@vitest/browser-playwright": "^4.1.8",
         "@vitest/coverage-v8": "^4.1.8",
         "dotenv-cli": "^11.0.0",
